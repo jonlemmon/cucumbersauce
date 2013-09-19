@@ -22,6 +22,17 @@ end
 
 gem 'jquery-rails'
 
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'sauce'
+  gem 'sauce-connect'
+  gem 'capybara'
+  gem 'parallel_tests'
+  gem 'cucumber-rails', :require => false
+  gem 'sauce-cucumber', :require => false
+  gem 'database_cleaner'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
